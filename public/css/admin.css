@@ -1,0 +1,211 @@
+.admin-content {
+    height: fit-content;
+    padding: 20px 40px 40px 280px;
+    background-color: #fff;
+    flex-direction: column;
+}
+#data-table {
+    font-size: 12px;
+    color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%!important;
+    border: 1px solid rgb(235, 236, 240);
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    background-color: #fff;
+    border-collapse: collapse;
+}
+.dataTable {
+    width: 100%;
+}
+#data-table colgroup {
+    display: none;
+}
+.dt-type-numeric, thead th, .dt-type-date {
+    text-align: center!important;
+}
+#data-table tr {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid rgb(235, 236, 240);
+}
+#data-table_wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+#data-table_wrapper > div {
+    width: 100%;
+    margin-bottom: 12px!important;
+    align-items: center;
+}
+.col-12, .justify-content-md-center {
+    padding: 0!important;
+    margin: 0!important;
+}
+#data-table_wrapper > div:first-child {
+    display: none!important;
+}
+.active>.page-link {
+    background-color: rgb(31, 132, 90)!important;
+    color: #fff!important;
+}
+#data-table td, th {
+    padding: 8px;
+    flex: 1;
+}
+#data-table tr.head {
+    background-color: #dffcf0;
+    height: 50px;
+    display: flex;
+}
+#data-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+#data-table img {
+    aspect-ratio: 1 / 1;
+    width: 100px;
+}
+.page-link {
+    border-radius: 50%!important;
+}
+.crud input[type="text"] {
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(235, 236, 240);
+    outline: none;
+}
+.crud input[type="text"]:focus {
+    border-bottom: 2px solid rgb(31, 132, 90);
+}
+.crud input[type="file"] {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.crud input[type="file"]::file-selector-button {
+    background: #fff;
+    border: 2px solid rgb(31, 132, 90);
+    border-radius: 6px;
+    padding: 4px 8px;
+    color: rgb(31, 132, 90);
+}
+.crud {
+    width: 680px;
+    padding: 14px;
+    max-height: 500px;
+    font-size: 14px!important;
+    overflow-y : auto;
+}
+.crud input:read-only {
+    background-color: transparent;
+    color: #666;
+    cursor: not-allowed;
+}
+.crud input:read-only:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(235, 236, 240);
+
+}
+.crud > div {
+    width: 100%;
+    margin-bottom: 16px; 
+    text-align: left;
+}
+.crud label {
+    width: 100%;
+    padding-bottom: 2px;
+    font-weight: 600; 
+    color: #000!important;
+}
+.crud textarea,  .crud input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(235, 236, 240);
+    border-radius: 10px;
+}
+.crud select, .crud input[type="number"] {
+    border: 1px solid rgb(235, 236, 240);
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+.crud input[type="number"] {
+    border: 1px solid rgb(235, 236, 240);
+    width: 100px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.crud textarea:focus, .crud select:focus, 
+.crud input[type="number"]:focus, .crud input[type="date"]:focus {
+    outline: 2px solid rgb(31, 132, 90);
+}
+.welcome {
+    animation-name: fade-in-down;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    
+}
+.note-editor {
+    border-radius: 12px!important;
+    text-align: left;
+}
+.note-editor .note-toolbar {
+    border-top-left-radius: 12px!important;
+    border-top-right-radius: 12px!important;
+}
+.note-editor .note-btn {
+    padding: 4px 8px!important;
+    background-color: #fff!important;
+}
+.note-editor .note-editable {
+    cursor: text!important;
+}
+.note-editor .note-toolbar {
+    background-color: #dffcf0!important;
+}
+.chart select {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    font-weight: 600;
+    background-color: transparent;
+    text-align: center;
+    font-size: 16px;
+    color: rgb(9, 30, 66);
+    padding: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #fff;
+}
+.chart select::-webkit-scrollbar {
+    display: none;
+}
+.chart select:focus {
+    border: 1px solid rgb(9, 30, 66);
+}
+.chart-block:hover {
+    transform: translateY(2px);
+    transition: all 0.5 ease;
+}
+canvas#myChart {
+    background-color: #fff;
+    padding: 10px;
+}
+
+
+
+  
+@keyframes fade-in-down {
+from {
+    transform: translateY(-100%);
+    opacity: 0.5;
+}
+to {
+    transform: translateY(0);
+    opacity: 1;
+}
+}
